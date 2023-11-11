@@ -6,9 +6,9 @@ Docker image for building [Ionic](https://ionicframework.com/) apps with [Cordov
 
 ### Build image
 
-Build from [GitHub](https://github.com/robingenz/docker-ionic-cordova):  
+Build from [GitHub](https://github.com/tjipenk/docker-ionic-cordova):  
 ```
-docker build -t robingenz/ionic-cordova github.com/robingenz/docker-ionic-cordova
+docker build -t tjipenk/ionic-cordova github.com/tjipenk/docker-ionic-cordova
 ```
 
 Available build arguments:
@@ -24,7 +24,7 @@ Available build arguments:
 
 Run the docker image:  
 ```
-docker run -it robingenz/ionic-cordova
+docker run -it tjipenk/ionic-cordova
 ```
 
 ## CI Configuration
@@ -34,7 +34,7 @@ docker run -it robingenz/ionic-cordova
 Here is a sample `.gitlab-ci.yml` file:
 
 ```yml
-image: robingenz/ionic-cordova
+image: tjipenk/ionic-cordova
 
 stages:
     - build
