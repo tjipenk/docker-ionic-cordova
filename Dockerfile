@@ -32,7 +32,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     && curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash - \
     && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs \
     # install ionic and cordova
-    && npm i -g --unsafe-perm ionic@${IONIC_VERSION} cordova@${CORDOVA_VERSION} \
+    && npm i -g --unsafe-perm ionic@${IONIC_VERSION}  \
+    && npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} \
     # clean up
     && apt-get clean -y \
     && rm -rf /tmp/sdk-tools-linux-${ANDROID_SDK_VERSION}.zip

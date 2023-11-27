@@ -47,6 +47,8 @@ build_android:
             - plugins/
     script:
         - npm ci
+        - ionic info
+        - ionic cordova requirements
         - ionic cordova build android
     artifacts:
         paths:
